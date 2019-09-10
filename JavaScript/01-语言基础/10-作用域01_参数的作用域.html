@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript">
+	/*
+		一个参数的作用域就在这个函数内部，超出函数就看不见该参数了
+	*/
+	function f1(a){
+		document.write('参数的作用域在函数以内，其值是' + a);//参数a的作用范围，所以打印出来是5
+	}
+	function f2(){
+		document.write('在函数里不能访问其他函数 的参数' + a);//不在参数a的作用范围，是一个未声明的变量，无法打印
+	}
+	f1(5);
+	f2();
+	document.write('在函数外也不能访问'+a);//也不在参数a的作用范围，是一个未声明的变量，无法打印
+</script>
+</head>
+<body>
+	
+</body>
+</html>
