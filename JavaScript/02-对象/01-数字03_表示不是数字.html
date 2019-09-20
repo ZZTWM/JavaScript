@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function p(s){
+	  document.write(s);
+	  document.write("<br>");
+	}
+	 
+	var a = new Number("123abc"); //通过非数字创建Number对象，得到的是一个NaN
+	p('通过非数字字符串"123abc"创建出来的Number对象 a的值是：'+a);
+	 
+	p('但是, a==Number.NaN会返回:'+(a==Number.NaN)); //即便是一个NaN 也"不等于" Number.NaN
+	 
+	p('正确判断是否是NaN的方式是调用isNaN函数:'+isNaN(a)); //正确的方式是通过isNaN() 函数进行判断	
+</script>
+</head>
+<body>
+	
+</body>
+</html>
