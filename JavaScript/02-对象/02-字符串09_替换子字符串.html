@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function p(s){
+	  document.write(s);
+	  document.write("<br>");
+	}
+	  
+	var x = new String("Hello JavaScript");
+	p('这个是原字符串: '+x);
+	var y = x.replace("a","o");
+	p('只替换第一个 a:  '+y);
+	var regS = new RegExp("a","g");
+	var z = x.replace(regS, "o");
+	p('替换掉所有的 a:  '+z);	
+</script>
+</head>
+<body>
+	
+</body>
+</html>
