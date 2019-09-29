@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function p(s){
+	  document.write(s);
+	  document.write("<br>");
+	}
+	   
+	var x = new Array(3,1,4,1,5,9,2,6);
+	p('数组x是:'+x);
+	x.splice (3,2);//从位置3开始 ，删除2个元素
+	p('x.splice (3,2) 表示从位置3开始 ，删除2个元素:'+x);
+	x.splice(3,0,1,5);
+	p('x.splice(3,0,1,5) 从位置3开始，删除0个元素，但是插入1和5,最后得到:'+x);		
+</script>
+</head>
+<body>
+		
+</body>
+</html>
