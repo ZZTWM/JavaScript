@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function p(s){
+	  document.write(s);
+	  document.write("<br>");
+	}	
+	
+	var x = new Array(3,14,5,9,2,6);
+	p('数组x是：' + x);
+	var y = x.slice(1);
+	p('x.slice(1)获取的子数组是:'+y);
+	
+	var z = x.slice(1,3);
+	p('x.slice(1,3)获取的子数组是：' + z);
+	p('第二个参数取不到');
+</script>
+</head>
+<body>
+		
+</body>
+</html>
