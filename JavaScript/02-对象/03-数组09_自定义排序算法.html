@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function p(s){
+		document.write(s);
+		document.write('<br>');
+	}		
+	
+	function comparator(v1,v2){
+		return v2-v1;
+	}
+	
+	var x = new Array(3,1,4,1,5,9,2,6);
+	p('数组x是：' + x);
+	x.sort(comparator);
+	p('使用sort 进行自定义倒排序后的数组x是:'+x);
+</script>
+</head>
+<body>
+		
+</body>
+</html>
