@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function p(s){
+		document.write(s);
+		document.write('<br>');
+	}	
+	
+	var x = new Array(3,1,4);
+	p('数组x是：' + x);
+	var y = x.join();
+	p('y = x.join()得到的是数组x的字符串表达，其值是' + y + '其类型是：' + (typeof y));
+	var z = x.join('@');
+	p('z = x.join("@");是x的字符串表达，不过分隔符不是默认的"," 而是"@" : '+z);
+	
+</script>
+</head>
+<body>
+		
+</body>
+</html>
