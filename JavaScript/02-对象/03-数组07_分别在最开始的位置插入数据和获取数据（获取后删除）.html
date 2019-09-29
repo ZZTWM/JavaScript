@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function p(s){
+		document.write(s);
+		document.write('<br>');
+	}	
+	
+	var x = new Array(3,1,4);
+	p('数组x是：' + x);
+	x.unshift(5);
+	p('对数组 unshift 值5(在最前面加)，数组变为:' + x);
+	var e = x.shift();
+	p('从数组中 shift 一个数(从最前面取)，其值是:' + e);
+	p('shift之后，数组变为:' + x);
+</script>
+</head>
+<body>
+		
+</body>
+</html>
