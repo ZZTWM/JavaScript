@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function p(s){
+		document.write(s);
+	}
+	var d = new Date();
+	p(d.getHours());
+	p(":");
+	p(d.getMinutes());
+	p(":");
+	p(d.getSeconds());
+	p(":");
+	p(d.getMilliseconds());
+	
+	function refresh(){
+		location.reload();
+	}
+</script>
+</head>
+<body>
+	<button onclick="refresh()">刷新当前页面</button>
+</body>
+</html>
