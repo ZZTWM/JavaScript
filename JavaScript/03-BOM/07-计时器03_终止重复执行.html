@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var t = setInterval(printTime,1000);
+
+	function printTime(){
+	  var d = new Date();
+	  var h= d.getHours();
+	  var m= d.getMinutes();
+	  var s= d.getSeconds();
+	  document.getElementById("time").innerHTML= h+":"+m+":"+s;
+	  if(s%5==0)
+	     clearInterval(t);
+	}
+  
+</script>
+</head>
+<body>
+	<p>每隔1秒钟，打印当前时间</p>
+	   
+	<div id="time"></div>	
+</body>
+</html>
